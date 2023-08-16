@@ -1,9 +1,13 @@
+import { useContext } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import Contexto from "../context/Contexto";
 
 const NavBar = () => {
   const navegacion = useNavigate();
+  const { deslogearme } = useContext(Contexto);
   const login = () => {
-    navegacion("login", { replace: true });
+    navegacion("/login", { replace: true });
+    deslogearme();
   };
 
   return (
