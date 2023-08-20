@@ -1,18 +1,29 @@
-import { Routes, Route, Navigate } from "react-router-dom";
-import CP from "../paginas/CP";
-import NO from "../paginas/NO";
+import { Routes, Route } from "react-router-dom";
 import Login from "../paginas/Login";
-import NavBar from "../navBar/NavBar";
+import Router2 from "./Router2";
+import RutasPublicas from "./RutasPublicas";
+import RutasPrivadas from "./RutasPrivadas";
 
 const Router = () => {
   return (
     <>
-      <NavBar />
       <Routes>
-        <Route path='cp' element={<CP />} />
-        <Route path='no' element={<NO />} />
-        <Route path='login' element={<Login />} />
-        <Route path='/' element={<Navigate to='cp' />} />
+        <Route
+          path='login'
+          element={
+            <RutasPublicas>
+              <Login />
+            </RutasPublicas>
+          }
+        />
+        <Route
+          path='/*'
+          element={
+            <RutasPrivadas>
+              <Router2 />
+            </RutasPrivadas>
+          }
+        />
       </Routes>
     </>
   );

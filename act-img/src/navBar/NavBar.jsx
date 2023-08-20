@@ -1,6 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import Context from "../contexto/Context";
 
 const NavBar = () => {
+  const navegacion = useNavigate();
+  const { deslogearse } = useContext(Context);
+  const logout = () => {
+    deslogearse();
+    navegacion("/login", { replace: true });
+  };
+
   return (
     <>
       <nav>
@@ -10,7 +19,7 @@ const NavBar = () => {
           <NavLink to='/login'>Login</NavLink>
         </div>
 
-        <button>Logout</button>
+        <button onClick={logout}>Logout</button>
       </nav>
     </>
   );
