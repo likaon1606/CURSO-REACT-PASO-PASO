@@ -1,0 +1,26 @@
+nav {
+  background-color: black;
+}
+
+a {
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 16px;
+}
+
+/* Con este truco de .active no hay que colocar la clase, solo se pone
+.active para dejar coloreado el link activo que se le da click */
+.active { 
+  color: orangered;
+}
