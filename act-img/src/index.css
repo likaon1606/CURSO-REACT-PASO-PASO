@@ -53,3 +53,18 @@ img {
   margin: 5px 0 10px;
   font-size: 0.74em;
 }
+
+.destino a {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 2px 12px 4px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.imagenGrande {
+  width: 500px;
+  margin: auto;
+}
