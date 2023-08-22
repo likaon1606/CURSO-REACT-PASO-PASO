@@ -1,5 +1,7 @@
+import CrearListado from "../datos/CrearListado";
+
 const NO = () => {
-  return <div>NO</div>;
+  return <CrearListado zona='no' />;
 };
 
 export default NO;

@@ -1,5 +1,7 @@
+import CrearListado from "../datos/CrearListado";
+
 const CP = () => {
-  return <div>CP</div>;
+  return <CrearListado zona='cp' />;
 };
 
 export default CP;

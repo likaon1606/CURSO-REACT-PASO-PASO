@@ -24,3 +24,32 @@ nav {
 .active { 
   color: orangered;
 }
+
+.lista {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.destino {
+  border: 1px solid gray;
+  padding: 8px 12px 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.nombre {
+  font-size: 0.92em;
+  text-align: center;
+}
+
+.situacion {
+  margin: 5px 0 10px;
+  font-size: 0.74em;
+}
