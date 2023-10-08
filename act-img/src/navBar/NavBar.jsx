@@ -16,7 +16,7 @@ const NavBar = () => {
         <div>
           <NavLink to='/cp'>Capital y Patagonia</NavLink>
           <NavLink to='/no'>Norte y Este</NavLink>
-          <NavLink to='/login'>Login</NavLink>
+          <NavLink to='/viaje'>Mi Viaje</NavLink>
         </div>
 
         <button onClick={logout}>Logout</button>
