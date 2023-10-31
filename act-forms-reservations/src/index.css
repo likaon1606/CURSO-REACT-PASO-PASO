@@ -66,8 +66,69 @@ button {
   border-radius: 6px;
 }
 
+.linea,
+.seccion {
+  display: flex;
+}
+
+.columna1 {
+  width: 130px;
+}
+
+.columna2 {
+  flex: 1;
+}
+
+.verde {
+  color: green;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+
+.resumen {
+  width: 30%;
+  border-left: 1px dotted gray;
+  padding-left: 20px;
+}
+
+.form {
+  flex: 1;
+  padding: 0 10px;
+}
+
 @media only screen and (min-width: 680px) {
   .zonas {
     width: 24.5%;
+  }
+}
+
+@media print {
+  .resumen {
+    border: none;
+    width: 100%;
+    font-size: 2em;
+    display: grid;
+  }
+
+  .opciones {
+    display: none;
+  }
+
+  .columna1 {
+    width: 280px;
+  }
+
+  .total {
+    font-size: 1.5em;
+  }
+
+  .informacion:nth-child(5) {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    grid-row: 2;
+  }
+
+  .informacion img {
+    width: 50%;
   }
 }
